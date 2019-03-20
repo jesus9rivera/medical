@@ -14,20 +14,22 @@ html body{
 	margin-top:.4rem;
 	padding: 0px;
 	display: inline-block;
-	color: #dd0426;
+	color: #fff;
 	font-size: 2em;
 }
 .encabezado .opciones{
 	display: inline-block;
 	float: right;
 	padding: 1rem;
+	padding-right: 4em;
 }
 .encabezado .opciones a{
-	color: gray;
+	color: #6b9080;
 	font-size: 1.2rem;
+	padding-left:1em;
 }
 .encabezado .opciones a:hover{
-	color: darkgray;
+	color: #aec2b9;
 	text-decoration: none;
 }
 
@@ -37,15 +39,23 @@ html body{
 
 }
 .margen{
-	height: 8em;
+	height: 4em;
 }
 .card.registro{
-	border: 1px solid black;
+	background: transparent;
+	border: 2px solid black;
 }
 .registro .card-header{
-	background-color: #e0e8e2;
+	background-color: rgba(0,0,0,.3);
 	border-bottom: 1px solid black;
 }
 .registro .card-header .titulo{
+	color: #fff;
 	font-size: 1.8em;
+}
+.bodyRegistro{
+	background-image: url('https://userscontent2.emaze.com/images/585e0877-ab9f-4830-bc23-25ecddb47910/45b8e979b1e36a8ba388a4cc655d449f.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }

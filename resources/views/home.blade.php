@@ -10,8 +10,10 @@
 <body>
 	<div class="encabezado">
 		<div class="titulo">SYCRONET</div>
-		<div class="opciones"><a href="/login">Login</a></div>
-		<div class="opciones"><a href="/registro">Register</a></div>
+		<div class="opciones">
+			<a href="/login">Login</a>
+			<a href="/registro">Register</a>
+		</div>
 	</div>
 </body>
 </html>

@@ -7,15 +7,11 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
         <link rel="stylesheet" type="text/css" href="">
     </head>
-    <body>
-        <div class="encabezado">
-            <div class="titulo">SYCRONET</div>
-            <div class="opciones"><a href="/login">Login</a></div>
-            <div class="opciones"><a href="/registro">Register</a></div>
-        </div>
+    <body class="bodyRegistro">
+
         <div class="margen"></div>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-md-6">
                     <div class="card registro" ng-controller="controlador" align="center">
                         <div class="card-header"><div class="titulo">Registrate</div></div>
@@ -51,7 +47,7 @@
                           
                                 <div class="row">
                                     <div class="col-lg-12 text-center">
-                                        <button type="submit" class="btn btn-primary" ng-click="guardar()">Aceptar</button>
+                                        <button type="submit" class="btn btn-danger" ng-click="guardar()">Aceptar</button>
                                     </div>                                    
                                 </div>
                             </form>
@@ -61,6 +57,7 @@
                 </div>
             </div>     
         </div>
+
     </body>
 </html>
 	
