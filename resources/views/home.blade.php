@@ -13,7 +13,7 @@
 		<div class="opciones">
 			<input name="usuario"  placeholder="Usuario">
 			<input type="password" name="contraseña"  placeholder="Contraseña">
-			<a href="/login">Accede</a>
+			<a href="/admin">Accede</a>
 			<a href="/registro">Registrate</a>
 		</div>
 	</div>

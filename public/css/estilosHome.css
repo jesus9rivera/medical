@@ -62,8 +62,11 @@ html body{
 	font-size: 1.8em;
 }
 .bodyRegistro{
-	background-image: url('https://userscontent2.emaze.com/images/585e0877-ab9f-4830-bc23-25ecddb47910/45b8e979b1e36a8ba388a4cc655d449f.jpg');
+	background-image: url('../imagenes/registro-fondo.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
