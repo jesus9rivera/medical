@@ -16,38 +16,38 @@
                     <div class="card registro" ng-controller="controlador" align="center">
                         <div class="card-header"><div class="titulo">Registrate</div></div>
                         <div class="card-body">
-                            <form class="cuerpo" method="post">                                              
+                            <form class="cuerpo" method="POST">                                              
                                 <div class="row justify-content-center">
                                     <div class="col-lg-9">
-                                        <input ng-model=personas.nombre name="nombre" type="text" placeholder="Nombre" class="form-control">
+                                        <input ng-model=cliente.nombre name="nombre" type="text" placeholder="Nombre" class="form-control">
                                     </div>
                                 </div><br>
                                 <div class="row justify-content-center">
                                     <div class="col-lg-9">
-                                        <input ng-model="personas.apellidos" name="apellido" type="text" placeholder="Apellidos" class="form-control">
-                                    </div>
-                                </div><br>
-                                
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-9">
-                                        <input ng-model="personas.email" name="email" type="email" placeholder="E-mail" class="form-control">
+                                        <input ng-model="cliente.apellidos" name="apellidos" type="text" placeholder="Apellidos" class="form-control">
                                     </div>
                                 </div><br>
                                 
                                 <div class="row justify-content-center">
                                     <div class="col-lg-9">
-                                        <input ng-model="personas.usuario" name="usuario" type="text" placeholder="Usuario" class="form-control">
+                                        <input ng-model="cliente.correo" name="correo" type="email" placeholder="E-mail" class="form-control">
+                                    </div>
+                                </div><br>
+                                
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <input ng-model="cliente.usuario" name="usuario" type="text" placeholder="Usuario" class="form-control">
                                     </div>
                                 </div><br>
                                 <div class="row justify-content-center">
                                     <div class="col-lg-9">
-                                        <input ng-model="personas.password" name="password" type="password" placeholder="Contraseña" class="form-control">
+                                        <input ng-model="cliente.contraseña" name="contraseña" type="password" placeholder="Contraseña" class="form-control">
                                     </div>
                                 </div><br>
                           
                                 <div class="row">
                                     <div class="col-lg-12 text-center">
-                                        <button type="submit" class="btn btn-danger" ng-click="guardar()">Aceptar</button>
+                                        <button type="submit" class="btn btn-danger">Aceptar</button>
                                     </div>                                    
                                 </div>
                             </form>
@@ -63,11 +63,13 @@
 	
     <script type="text/javascript">
 
+        var app= angular.module('app',[]);
+
         app.controller('controlador',function($scope,$http){
-            $scope.personas={};
-            $scope.guardar=function()
-            {
-                 console.log($scope.personas);
+            $scope.cliente={};
+
+            $scope.guardar=function(){
+                 console.log($scope.cliente);
             }
            
         });
