@@ -11,8 +11,10 @@
 	<div class="encabezado">
 		<div class="titulo">SYCRONET</div>
 		<div class="opciones">
-			<a href="/login">Login</a>
-			<a href="/registro">Register</a>
+			<input name="usuario"  placeholder="Usuario">
+			<input type="password" name="contraseña"  placeholder="Contraseña">
+			<a href="/login">Accede</a>
+			<a href="/registro">Registrate</a>
 		</div>
 	</div>
 </body>

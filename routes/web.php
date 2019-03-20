@@ -24,10 +24,6 @@ Route::get('default',function(){
 	return view('default');
 });
 
-Route::get('/login',function(){
-	return view('login');
-});
-
 Route::get('registro',function(){
 	return view('registro');
 });

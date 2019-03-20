@@ -23,6 +23,14 @@ html body{
 	padding: 1rem;
 	padding-right: 4em;
 }
+.encabezado .opciones input{
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 2em;
+	border-radius: 19px;
+	padding-left: 10px;
+}
 .encabezado .opciones a{
 	color: #6b9080;
 	font-size: 1.2rem;
