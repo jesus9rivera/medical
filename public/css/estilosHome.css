@@ -68,5 +68,19 @@ html body{
 	background-attachment: fixed;
 }
 
+.registroExitoso{
+	margin-top: 10%;
+}
+.registroExitoso h1{
+	margin-top: 4%;
+	font-size: 5em;
+}
+.registroExitoso h2{
+	margin-top: 10%;
+	font-size: 2em;
+	padding-right: 3em;
+	text-align:justify;
+}
+
 a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
 a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }

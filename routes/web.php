@@ -28,6 +28,10 @@ Route::get('registro',function(){
 	return view('registro');
 });
 
+Route::get('registrado',function(){
+	return view('registro-exitoso');
+});
+
 Route::get('menuClientes',function(){
 	return view('menuClientes');
 });
