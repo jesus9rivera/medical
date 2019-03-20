@@ -1,47 +1,70 @@
-@extends('footer')
-@extends('header')
-
-@section('header')
-    @parent
-	<div class="formularioStyle" ng-controller="controlador" align="center">
-	        <div class="row">
-	            <div class="col-md-12">
-	                <form class="cuerpo" method="post">
-                        <fieldset>
-                        	<br><br>
-                            <h1>Completa el Registro</h1>
-                            
-                                
-                                <div class="col-lg-8">
-                                <input ng-model=personas.nombre name="nombre" type="text" placeholder="Nombre" class="form-control">
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title>Medical</title>
+        <link rel="stylesheet" type="text/css" href="{{asset('css/estilosHome.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+    <body>
+        <div class="encabezado">
+            <div class="titulo">SYCRONET</div>
+            <div class="opciones"><a href="/login">Login</a></div>
+            <div class="opciones"><a href="/registro">Register</a></div>
+        </div>
+        <div class="margen"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card registro" ng-controller="controlador" align="center">
+                        <div class="card-header"><div class="titulo">Registrate</div></div>
+                        <div class="card-body">
+                            <form class="cuerpo" method="post">                                              
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <input ng-model=personas.nombre name="nombre" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div><br>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <input ng-model="personas.apellidos" name="apellido" type="text" placeholder="Apellidos" class="form-control">
+                                    </div>
                                 </div><br>
                                 
-                                <div class="col-lg-8">
-                                <input ng-model="personas.apellidos" name="apellido" type="text" placeholder="Apellidos" class="form-control">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <input ng-model="personas.email" name="email" type="email" placeholder="E-mail" class="form-control">
+                                    </div>
                                 </div><br>
                                 
-                                <div class="col-lg-8">
-                                    <input ng-model="personas.email" name="email" type="email" placeholder="E-mail" class="form-control">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <input ng-model="personas.usuario" name="usuario" type="text" placeholder="Usuario" class="form-control">
+                                    </div>
                                 </div><br>
-                            
-                                <div class="col-lg-8">
-                                    <input ng-model="personas.usuario" name="usuario" type="text" placeholder="Usuario" class="form-control">
-                                </div><br>
-                            
-                                <div class="col-lg-8">
-                                    <input ng-model="personas.password" name="password" type="password" placeholder="Contraseña" class="form-control">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <input ng-model="personas.password" name="password" type="password" placeholder="Contraseña" class="form-control">
+                                    </div>
                                 </div><br>
                           
-                                <div class="col-lg-8 text-center">
-                                    <button type="submit" class="btn btn-success btn-lg" ng-click="guardar()">Aceptar</button>
-                                </div><br>
-                        </fieldset>
-                    </form>
-	            </div>
-	        </div>
-	    </div>
-    @section('footer')
-        @parent
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <button type="submit" class="btn btn-primary" ng-click="guardar()">Aceptar</button>
+                                    </div>                                    
+                                </div>
+                            </form>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </body>
+</html>
+	
+    <script type="text/javascript">
 
         app.controller('controlador',function($scope,$http){
             $scope.personas={};
@@ -53,6 +76,3 @@
         });
 
     </script>
-
-@endsection
-@endsection

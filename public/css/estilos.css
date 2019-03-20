@@ -140,21 +140,5 @@ a:focus, a:focus * { outline: none !important; -moz-outline-style: none !importa
 	padding-bottom:.2em;
 }
 
-.formularioStyle{
-	margin-top: 2%;
-	margin-right: 20%;
-	margin-left:20%;
-	background: #000;
-	color: white; 
-	-webkit-box-shadow: 25px 25px 28px 16px rgba(0,0,0,0.75);
-	-moz-box-shadow: 25px 25px 28px 16px rgba(0,0,0,0.75);
-	box-shadow: 25px 25px 28px 16px rgba(0,0,0,0.75);
-}
-.formularioStyle h1{
-	margin-bottom:2em;
-}
-.formularioStyle .cuerpo{
-	margin-bottom:2em;
-}
 
 
