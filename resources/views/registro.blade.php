@@ -16,7 +16,8 @@
                     <div class="card registro" ng-controller="controlador" align="center">
                         <div class="card-header"><div class="titulo">Registrate</div></div>
                         <div class="card-body">
-                            <form class="cuerpo" method="POST">                                              
+                            <form class="cuerpo" method="POST" action="/guardarUsuario">    
+                                {{ csrf_field() }}                                          
                                 <div class="row justify-content-center">
                                     <div class="col-lg-9">
                                         <input ng-model=cliente.nombre name="nombre" type="text" placeholder="Nombre" class="form-control">

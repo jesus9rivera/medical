@@ -32,6 +32,8 @@ Route::get('registrado',function(){
 	return view('registro-exitoso');
 });
 
+Route::post('guardarUsuario','Clientes@crear');
+
 Route::get('menuClientes',function(){
 	return view('menuClientes');
 });
