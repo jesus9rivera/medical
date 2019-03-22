@@ -12,11 +12,21 @@ class Clientes extends Controller
     public function crear (Request $request){
        
         $datos = new Usuario();
-        $datos->usuario = $request->input('usuario');
+        $datos->correo = $request->input('correo');
         $datos->contraseña = $request->input('contraseña');
-        $datos->tipo = '0';
         $datos->privilegios_id = 1; 
         $datos->save();
+        
+        $datosUsu = DB::table('usuarios')
+            ->where('correo',$request->input('correo'))
+            ->get();
+
+        $d = new Cliente();
+        $d->nombre = $request->input('nombre');
+        $d->apellidos = $request->input('apellidos');
+        $d->usuarios_id = $datosUsu[0]->id;
+        $d->save();
+
 
         return view('registro-exitoso');
    }
