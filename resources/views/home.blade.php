@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html ng-app="app">
-<head>
-	<meta charset="utf-8">
-	<title>Medical</title>
-	<link rel="stylesheet" type="text/css" href="{{asset('css/estilosHome.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="">
-</head>
-<body>
-	<div class="encabezado">
-		<div class="titulo">SYCRONET</div>
-		<div class="opciones">
-			<input name="usuario"  placeholder="Usuario">
-			<input type="password" name="contraseña"  placeholder="Contraseña">
-			<a href="/admin">Accede</a>
-			<a href="/registro">Registrate</a>
-		</div>
-	</div>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
